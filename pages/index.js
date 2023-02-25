@@ -95,7 +95,7 @@ export default function Home() {
               {weather.dt_txt.substr(0, 4)}
             </p>
             <span>
-              {weather.main.temp.toFixed(1)}°C
+              {weather.main.temp.toFixed(1)}&#176;C
               <br />
               {weather.weather[0].main}
             </span>
