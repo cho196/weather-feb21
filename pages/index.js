@@ -107,14 +107,14 @@ export default function Home() {
     setData(weatherData);
   };
 
-  useEffect(() => {
-    if (grabWeather.current === true) {
-      fetchWeather();
-    }
-    return () => {
-      grabWeather.current = true;
-    };
-  }, []);
+  // useEffect(() => {
+  //   if (grabWeather.current === true) {
+  //     fetchWeather();
+  //   }
+  return () => {
+    grabWeather.current = true;
+  };
+  // }, []);
 
   const current = new Date();
   const date = `${current.getDate()}/${
